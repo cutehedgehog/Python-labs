@@ -1,3 +1,5 @@
+import random
+
 print("Hello world!")
 
 ADD = "add"
@@ -24,3 +26,16 @@ number2 = int(input("Enter second number: "))
 operation = input("Enter operation: ")
 
 print("Result: ", math_operations(number1, number2, operation))
+
+numbers = []
+even_numbers = []
+
+for i in range(10):
+    numbers.append(random.randint(0, 100))
+
+for i in range(len(numbers)):
+    if numbers[i] % 2 == 0:
+        even_numbers.append(numbers[i])
+
+print("List of 10 numbers: ", numbers)
+print("Even numbers of this list: ", even_numbers)
